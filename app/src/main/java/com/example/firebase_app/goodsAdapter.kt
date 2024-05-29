@@ -24,6 +24,7 @@ class goodsAdapter(private val empList: ArrayList<GoodsModel>) :
         return ViewHolder(itemView, mListener)
     }
 
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentEmp = empList[position]
         holder.tvGoodsName.text = currentEmp.GoodsNumber
